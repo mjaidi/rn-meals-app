@@ -13,6 +13,7 @@ import CategoryMealsScreen from "../screens/CategoryMealsScreen";
 import MealDetailScreen from "../screens/MealDetailScreen";
 import FavoritesScreen from "../screens/FavoritesScreen";
 import FiltersScreen from "../screens/FiltersScreen";
+import DefaultText from "../components/DefaultText";
 
 const navigationDefaults = {
   headerStyle: {

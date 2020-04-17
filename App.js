@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import * as Font from "expo-font";
 import { AppLoading } from "expo";
 import { enableScreens } from "react-native-screens";
+import { Provider } from "react-redux";
+import store from "./store";
 
 import MealsNavigator from "./navigation/MealsNavigator";
 
@@ -25,7 +27,11 @@ const App = () => {
       />
     );
   }
-  return <MealsNavigator />;
+  return (
+    <Provider store={store}>
+      <MealsNavigator />
+    </Provider>
+  );
 };
 
 export default App;
